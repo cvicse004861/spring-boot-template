@@ -1,0 +1,13 @@
+#应用信息，只需从pom中修改
+application:
+  name: @name@
+  version: @version@
+  env: @active@
+spring:
+  banner:
+    location: banner.txt
+  profiles:
+    # 激活的配置文件，开发（dev）、测试（test）、生产（prod）中配置数据库等会因为环境变化而变化的参数
+    active: @active@
+  #在这里可以写spring的其他配置
+#在这可以写工程的其他配置
